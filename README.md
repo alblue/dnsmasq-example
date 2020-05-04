@@ -37,6 +37,8 @@ The following configuration files are provided:
 * DNS upstream servers (combined or individually)
   - [dns-google](dnsmasq.d/dns-google)
   - [dns-cloudflare](dnsmasq.d/dns-cloudflare)
+* Blocking DNS over HTTP(s) where available
+  - [dns-no-doh.conf](dnsmasq.d/dns-no-doh.conf)
 * [DNSSEC configuration, with dnssec enabled](dnsmasq.d/dnssec.conf)
   - Ensure signed DNSSEC entries are correct (`dnssec`)
   - DNSSEC for unsigned entries *not* enabled (`dnssec-check-unsigned`)

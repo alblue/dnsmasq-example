@@ -1,0 +1,8 @@
+# Blackhole hosts file
+#
+# This can be used to add additional hosts to blackhole, by
+# mapping each entry to a 0.0.0.0 address. The file can be reloaded
+# dynamicall by sending dnsmasq a # SIGHUP message, such as:
+# `killall -HUP dnsmasq` or `kill -HUP $(pgrep dnsmasq)`
+
+#0.0.0.0	ignoreme.example.com

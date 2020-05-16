@@ -1,0 +1,12 @@
+{
+	"problemMatcher": [{
+		"name": "dnsmasq",
+		"owner": "dnsmasq",
+		"pattern": [{
+			"regexp": "^dnsmasq: (.*?)( at line ([0-9]+).* of /github/workspace/(.*))?$$",
+			"message": 1,
+			"line": 3,
+			"file": 4
+		}]
+	}]
+}

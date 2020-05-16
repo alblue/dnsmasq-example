@@ -1,0 +1,10 @@
+name: 'Run dnsmasq in docker'
+description: 'Tests the dnsmasq configuration files in dnsmasq.d to verify they work as expected'
+runs:
+  using: 'docker'
+  image: 'docker://alblue/dnsmasq'
+  args:
+    - bash
+    - -c
+    - "echo \"::add-matcher::./.github/lint/dnsmasq.eslint\"; /usr/sbin/dnsmasq --test --conf-dir /github/workspace/dnsmasq.d"
+# We have to have the echo in the docker command, because otherwise the matcher won't apply
